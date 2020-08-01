@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 rocksdb = "0.14.0"
+byte_array = "0.1.3"
+
+
