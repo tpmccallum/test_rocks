@@ -15,7 +15,8 @@ db.put(&b"1234"[..], &b"5678"[..]).unwrap();
 println!("Value stored ... ");
 
 //Load
-let loaded_data = db.get(&b"1234"[..]).unwrap().unwrap();
+//let loaded_data = db.get(&b"1234"[..]).unwrap().unwrap();
+let loaded_data = db.get([53, 54, 55, 56]).unwrap().unwrap();
 assert!(loaded_data == [53, 54, 55, 56]);
 println!("Value of 5678 which is represented by the byte array : {:?}, was successfully loaded.", loaded_data);
 }
