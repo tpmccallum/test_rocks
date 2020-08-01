@@ -15,8 +15,8 @@ let db = DB::open_default(db_path).unwrap();
 // Create key and value
 let mut key = ByteArray::new();
 let mut value = ByteArray::new();
-key.write(1234 as u8);
-value.write(5678 as u8);
+key.write(&(1234 as u8));
+value.write(&(5678 as u8));
 
 
 // Store
