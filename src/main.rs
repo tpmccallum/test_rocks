@@ -5,7 +5,7 @@ use byte_array::ByteArray;
 use rocksdb::DB;
 
 // Set config
-let db_path = "/media/nvme/ssvm_database".to_string();
+let db_path = "/media/nvme/ssvm_database";
 
 // Open DB instance
 let db = DB::open_default(db_path).unwrap();
